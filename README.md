@@ -76,3 +76,14 @@ ArgoCD의 ComparisonError가 해소되어 애플리케이션이 정상 배포(Sy
 > 배운 점: 파드/서비스가 모두 Running이어도, 노드 간 네트워크 계층(L3/L4)이
 > 막히면 클러스터 DNS가 실패할 수 있다. "Running = 정상"이 아니라 실제 통신을
 > 검증해야 한다는 것을 확인했다.
+
+## 실행 결과
+
+### 1. GitHub Actions CI 파이프라인
+![ci](screenshots/01-github-actions-ci.png)
+
+### 2. ArgoCD 자동 배포 (Synced / Healthy)
+![cd](screenshots/02-argocd-synced.png)
+
+### 3. 배포된 애플리케이션 (v2.0.0)
+![app](screenshots/03-deployed-app-v2.png)
